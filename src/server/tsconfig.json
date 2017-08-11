@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "es6",
+    "noImplicitAny": false,
+    "outDir": "../../dist/server",
+    "baseUrl": ".",
+    "module": "commonjs"
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

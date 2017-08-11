@@ -1,0 +1,5 @@
+const cosmosPort = 10250; // replace with your port
+const dbName = 'pilot';
+const key = '12312312312321313';
+//"mongodb://pilot:12312312312321313==@pilot.documents.azure.com:10250/?ssl=true"
+

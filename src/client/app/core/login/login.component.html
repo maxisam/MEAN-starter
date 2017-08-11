@@ -1,0 +1,22 @@
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-6 text-center">
+            <form role="form" (ngSubmit)="onSubmit()" [formGroup]="loginFG">
+                <md-input-container>
+                    <input mdInput type="text" formControlName="account" name="account">
+                    <md-placeholder>
+                        <i class="material-icons app-input-icon">face</i>Account
+                    </md-placeholder>
+                </md-input-container><br><br>
+                <md-input-container>
+                    <input mdInput type="password" formControlName="password" name="password">
+                    <md-placeholder>
+                        <i class="material-icons app-input-icon">lock_open</i>Password
+                    </md-placeholder>
+                </md-input-container><br><br>
+                <button md-raised-button color="warn" type="submit" name="action">LOGIN</button><br><br>
+                <span id="err"><small>{{errorMsg}}</small></span>
+            </form>
+        </div>
+    </div>
+</div>
