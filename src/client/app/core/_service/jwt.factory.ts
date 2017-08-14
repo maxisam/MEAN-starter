@@ -12,7 +12,9 @@ export function jwtOptionsFactory(store$: Store<IAppState>) {
                 .subscribe((token) => tokenSync = token);
             return tokenSync;
         },
-        whitelistedDomains: ['localhost:3000', 'localhost:4200']
+        whitelistedDomains: ['localhost:3000', 'localhost:4200'],
+        headerName: 'authorization',
+        authScheme: 'JWT '
     }
 
 }
