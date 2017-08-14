@@ -16,7 +16,6 @@ import { CustomMaterialModule } from './custom-material.module';
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        HttpClientModule,
         // 3rd party
         CustomMaterialModule
     ]
